@@ -59,6 +59,7 @@ brew 'elasticsearch'
 brew 'kibana'
 brew 'tippecanoe'
 brew 'postgis'
+brew 'github-desktop'
 
 cask '1password'
 cask 'adium'
