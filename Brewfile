@@ -62,6 +62,7 @@ brew 'postgis'
 brew 'github-desktop'
 brew 'josm'
 brew 'gdb'
+brew 'heroku-toolbelt'
 
 cask '1password'
 cask 'adium'
