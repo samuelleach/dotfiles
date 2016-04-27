@@ -9,6 +9,6 @@ git config --global diff.csv.wordRegex $'[^,\n]+[,\n]|[,]'
 # For Jupyter nbstripout (https://github.com/kynan/nbstripout)
 # Filtering requires a .gitattributes file with
 # *.ipynb filter=nbstripout
-git config filter.nbstripout.clean nbstripout
-git config filter.nbstripout.smudge cat
-git config filter.nbstripout.required true
+#git config filter.nbstripout.clean nbstripout
+#git config filter.nbstripout.smudge cat
+#git config filter.nbstripout.required true
