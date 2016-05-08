@@ -65,6 +65,7 @@ brew 'gdb'
 brew 'heroku-toolbelt'
 brew 'neo4j'
 brew 's3cmd'
+brew 'suite-parse'
 
 cask '1password'
 cask 'adium'
