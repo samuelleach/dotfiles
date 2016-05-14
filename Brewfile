@@ -70,6 +70,7 @@ brew 'libzip'
 brew 'libstxll'
 brew 'lua51'
 brew 'luabind'
+brew 'fio'
 
 cask '1password'
 cask 'adium'
