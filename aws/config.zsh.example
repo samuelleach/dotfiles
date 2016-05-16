@@ -1,0 +1,4 @@
+# Sample AWS config
+
+export AWS_ACCESS_KEY_ID='FOO'
+export AWS_SECRET_ACCESS_KEY='BAR'
