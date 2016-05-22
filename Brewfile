@@ -71,6 +71,7 @@ brew 'libstxll'
 brew 'lua51'
 brew 'luabind'
 brew 'fio'
+brew 'mapnik'
 
 cask '1password'
 cask 'adium'
