@@ -72,6 +72,7 @@ brew 'lua51'
 brew 'luabind'
 brew 'fio'
 brew 'mapnik'
+brew 'nvm'
 
 cask '1password'
 cask 'adium'
