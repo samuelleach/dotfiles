@@ -68,6 +68,7 @@ brew 'luabind'
 brew 'fio'
 brew 'mapnik'
 brew 'nvm'
+brew 'cyberghost'
 
 cask '1password'
 cask 'adium'
