@@ -69,6 +69,7 @@ brew 'fio'
 brew 'mapnik'
 brew 'nvm'
 brew 'cyberghost'
+brew 'randomize-lines'
 
 cask '1password'
 cask 'adium'
