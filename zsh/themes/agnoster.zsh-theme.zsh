@@ -72,8 +72,9 @@ prompt_end() {
 ### Prompt components
 # Each component will draw itself, and hide itself if no information needs to be shown
 
+DATE=`date +"%T"`
 prompt_context() {
-    prompt_segment $PRIMARY_FG default "$HAPPYPERSON  "%T" "
+    prompt_segment $PRIMARY_FG default "$HAPPYPERSON  $DATE "
 }
 
 prompt_virtualenv() {
