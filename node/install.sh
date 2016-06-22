@@ -4,5 +4,5 @@ then
 fi
 
 
-mkdir ~/.nvm
+mkdir -p ~/.nvm
 
