@@ -36,6 +36,11 @@ DETACHED="\u27a6"
 CROSS="\u2718"
 LIGHTNING="\u26a1"
 GEAR="\u2699"
+HIBISCUS="\xF0\x9F\x8C\xBA"
+SKULL="\xF0\x9F\x92\x80"
+SNAKE="\xF0\x9F\x90\x8D"
+SHELL="\xF0\x9F\x90\x9A"
+HAPPYPERSON="\xF0\x9F\x99\x8B"
 
 # Begin a segment
 # Takes two arguments, background and foreground. Both can be omitted,
@@ -60,20 +65,15 @@ prompt_end() {
   else
     print -n "%{%k%}"
   fi
-  print -n "%{%f%}\n›"
+  print -n "%{%f%}\n$SHELL "
   CURRENT_BG=''
 }
 
 ### Prompt components
 # Each component will draw itself, and hide itself if no information needs to be shown
 
-# Context: user@hostname (who am I and where am I)
 prompt_context() {
-  local user=`whoami`
-
-  if [[ "$user" != "$DEFAULT_USER" || -n "$SSH_CONNECTION" ]]; then
-    prompt_segment $PRIMARY_FG default " %(!.%{%F{yellow}%}.)$user@%m "
-  fi
+    prompt_segment $PRIMARY_FG default "$HAPPYPERSON  "%T" "
 }
 
 prompt_virtualenv() {
@@ -86,7 +86,7 @@ prompt_virtualenv() {
 							fi
 
 	if [[ -n "$environ" ]]; then
-    prompt_segment magenta 14 " ⓔ $environ "
+    prompt_segment magenta 14 " $SNAKE  $environ "
   fi
 }
 
@@ -100,10 +100,10 @@ prompt_git() {
   if [[ -n "$ref" ]]; then
     if is_dirty; then
       color=yellow
-      ref="${ref} $PLUSMINUS"
+      ref="${ref} $SKULL "
     else
       color=green
-      ref="${ref} "
+      ref="${ref} $HIBISCUS "
     fi
     if [[ "${ref/.../}" == "$ref" ]]; then
       ref="$BRANCH $ref"
