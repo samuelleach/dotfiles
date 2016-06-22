@@ -60,7 +60,7 @@ prompt_end() {
   else
     print -n "%{%k%}"
   fi
-  print -n "%{%f%}"
+  print -n "%{%f%}\n›"
   CURRENT_BG=''
 }
 
