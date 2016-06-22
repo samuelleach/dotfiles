@@ -70,6 +70,7 @@ brew 'mapnik'
 brew 'nvm'
 brew 'cyberghost'
 brew 'randomize-lines'
+brew 'iterm'
 
 cask '1password'
 cask 'adium'
