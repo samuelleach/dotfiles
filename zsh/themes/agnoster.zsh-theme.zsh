@@ -76,6 +76,20 @@ prompt_context() {
   fi
 }
 
+prompt_virtualenv() {
+  local environ=""
+
+	    if [[ -n "$CONDA_DEFAULT_ENV" ]]; then
+				        environ="conda: $(basename $CONDA_DEFAULT_ENV)"
+	    elif [[ -n "$VIRTUAL_ENV" ]]; then
+				        environ=$(basename "$VIRTUAL_ENV")
+							fi
+
+	if [[ -n "$environ" ]]; then
+    prompt_segment magenta 14 " ⓔ $environ "
+  fi
+}
+
 # Git: branch/detached head, dirty status
 prompt_git() {
   local color ref
@@ -125,6 +139,7 @@ prompt_agnoster_main() {
   RETVAL=$?
   CURRENT_BG='NONE'
   prompt_status
+  prompt_virtualenv
   prompt_context
   prompt_dir
   prompt_git
