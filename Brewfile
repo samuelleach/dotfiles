@@ -69,6 +69,7 @@ brew 'fio'
 brew 'mapnik'
 brew 'nvm'
 brew 'randomize-lines'
+brew 'phantomjs'
 
 cask '1password'
 cask 'adium'
