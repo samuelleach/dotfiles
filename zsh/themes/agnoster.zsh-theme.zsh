@@ -74,7 +74,7 @@ prompt_end() {
 
 prompt_context() {
     DATE=`date +"%T"`
-    prompt_segment $PRIMARY_FG default "$HAPPYPERSON  $DATE "
+    prompt_segment $PRIMARY_FG default " $HAPPYPERSON  $DATE "
 }
 
 prompt_virtualenv() {
