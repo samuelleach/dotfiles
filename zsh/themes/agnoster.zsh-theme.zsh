@@ -39,7 +39,6 @@ GEAR="\u2699"
 HIBISCUS="\xF0\x9F\x8C\xBA"
 SKULL="\xF0\x9F\x92\x80"
 SNAKE="\xF0\x9F\x90\x8D"
-SHELL="\xF0\x9F\x90\x9A"
 HAPPYPERSON="\xF0\x9F\x99\x8B"
 
 # Begin a segment
@@ -65,7 +64,8 @@ prompt_end() {
   else
     print -n "%{%k%}"
   fi
-  print -n "%{%f%}\n$SHELL "
+  SHELL="\xF0\x9F\x90\x9A"
+  print -n "%{%f%}\n$SHELL"
   CURRENT_BG=''
 }
 
