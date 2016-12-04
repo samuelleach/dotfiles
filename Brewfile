@@ -70,6 +70,8 @@ brew 'mapnik'
 brew 'nvm'
 brew 'randomize-lines'
 brew 'gnu-sed'
+brew 'gnumeric'
+brew 'mp3info'
 
 cask '1password'
 cask 'adium'
