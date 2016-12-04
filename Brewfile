@@ -72,6 +72,7 @@ brew 'randomize-lines'
 brew 'gnu-sed'
 brew 'gnumeric'
 brew 'mp3info'
+brew 'mediainfo'
 
 cask '1password'
 cask 'adium'
